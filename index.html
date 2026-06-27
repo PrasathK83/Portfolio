@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasath Krishna Moorthi | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Prasath Krishna Moorthi - software developer, AI enthusiast, and problem solver." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home">
+        <span>Prasath K</span>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section reveal" id="home">
+        <div class="hero-fx" aria-hidden="true">
+          <span class="orb orb-a"></span>
+          <span class="orb orb-b"></span>
+          <span class="orb orb-c"></span>
+        </div>
+
+        <div class="hero-copy">
+          <div class="badge">Available for Work</div>
+          <h1>Hi, I'm Prasath</h1>
+          <p>AI/ML Enthusiast | Software Developer | Problem Solver</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="hero-photo">
+        <div class="photo-ring">
+        <div class="photo-core">
+        <img src="port.png" alt="Prasath Krishna Moorthi" class="profile-photo">
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="about section reveal" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content card">
+          <p>
+            I am currently pursuing my Bachelor of Technology at Dr.N.G.P Institute of Technology. 
+            I have a strong passion for Artificial Intelligence, Machine Learning, and Web Development. 
+            My goal is to join a renowned organization where I can enhance my skills and contribute to the growth of the organization.
+          </p>
+          <br>
+          <p>
+            I recently completed internships in AI at Blue IT Solutions and the Agnirva Space Program by ISRO. 
+            I love building impactful projects like real-time object detection systems, cloud storage solutions, and intelligent chatbots.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills section reveal" id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+          <article class="card skill-card border-b-2 border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.4)] transition-all duration-300"><i class="fa-brands fa-python skill-icon"></i><h3>Python & ML</h3></article>
+          <article class="card skill-card border-b-2 border-pink-500 hover:shadow-[0_0_25px_rgba(236,72,153,0.4)] transition-all duration-300"><i class="fa-brands fa-java skill-icon text-pink-400"></i><h3>Java & Android</h3></article>
+          <article class="card skill-card border-b-2 border-purple-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition-all duration-300"><i class="fa-solid fa-brain skill-icon text-purple-400"></i><h3>AI & NLP</h3></article>
+          <article class="card skill-card border-b-2 border-green-400 hover:shadow-[0_0_25px_rgba(74,222,128,0.4)] transition-all duration-300"><i class="fa-solid fa-database skill-icon text-green-400"></i><h3>SQL & MySQL</h3></article>
+          <article class="card skill-card border-b-2 border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.4)] transition-all duration-300"><i class="fa-solid fa-code skill-icon text-yellow-400"></i><h3>HTML/CSS/Flask</h3></article>
+          <article class="card skill-card border-b-2 border-red-500 hover:shadow-[0_0_25px_rgba(239,68,68,0.4)] transition-all duration-300"><i class="fa-brands fa-github skill-icon text-red-400"></i><h3>Git & GitHub</h3></article>
+        </div>
+      </section>
+
+      <section class="projects section reveal" id="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid mb-12">
+          <!-- Featured 1: Cyan -->
+          <article class="card project-card border border-cyan-500 hover:shadow-[0_0_30px_rgba(6,182,212,0.6)] hover:-translate-y-2 transition-all duration-300">
+            <div class="project-icon text-cyan-400 bg-cyan-900/40"><i class="fa-solid fa-video"></i></div>
+            <h3 class="text-cyan-50">Real Object Detection</h3>
+            <p>A real-time object detection system using YOLOv5, OpenCV, and voice alerts for object proximity.</p>
+            <div class="project-links mt-4">
+              <a href="https://github.com/PrasathK83/RealMap" target="_blank" class="link-btn hover:bg-cyan-500 hover:text-gray-900 hover:border-cyan-500"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </article>
+          
+          <!-- Featured 2: Pink -->
+          <article class="card project-card border border-pink-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.6)] hover:-translate-y-2 transition-all duration-300">
+            <div class="project-icon text-pink-400 bg-pink-900/40"><i class="fa-solid fa-cloud"></i></div>
+            <h3 class="text-pink-50">Mini Cloud Storage</h3>
+            <p>Flask-based cloud platform with async file uploads, user auth, and secure database-driven file management.</p>
+            <div class="project-links mt-4">
+              <a href="https://github.com/PrasathK83/mini-cloud-storage" target="_blank" class="link-btn hover:bg-pink-500 hover:text-gray-900 hover:border-pink-500"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </article>
+          
+          <!-- Featured 3: Green -->
+          <article class="card project-card border border-green-400 hover:shadow-[0_0_30px_rgba(74,222,128,0.6)] hover:-translate-y-2 transition-all duration-300">
+            <div class="project-icon text-green-400 bg-green-900/40"><i class="fa-solid fa-robot"></i></div>
+            <h3 class="text-green-50">Medibot</h3>
+            <p>An AI-powered medical chatbot built with NLP and Flask that provides basic healthcare guidance based on symptoms.</p>
+            <div class="project-links mt-4">
+              <a href="https://github.com/PrasathK83/Medibot" target="_blank" class="link-btn hover:bg-green-400 hover:text-gray-900 hover:border-green-400"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </article>
+
+          <!-- Featured 4: Yellow -->
+          <article class="card project-card border border-yellow-400 hover:shadow-[0_0_30px_rgba(250,204,21,0.6)] hover:-translate-y-2 transition-all duration-300">
+            <div class="project-icon text-yellow-400 bg-yellow-900/40"><i class="fa-solid fa-cloud-sun"></i></div>
+            <h3 class="text-yellow-50">Telegram Weather Bot</h3>
+            <p>A modular Telegram chatbot delivering real-time weather updates via the OpenWeatherMap API.</p>
+            <div class="project-links mt-4">
+              <a href="https://github.com/PrasathK83/Telebot" target="_blank" class="link-btn hover:bg-yellow-400 hover:text-gray-900 hover:border-yellow-400"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </article>
+
+          <!-- Featured 5: Purple -->
+          <article class="card project-card border border-purple-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] hover:-translate-y-2 transition-all duration-300">
+            <div class="project-icon text-purple-400 bg-purple-900/40"><i class="fa-solid fa-users-gear"></i></div>
+            <h3 class="text-purple-50">CRM Java Fullstack</h3>
+            <p>A comprehensive Customer Relationship Management system built with Java and PostgreSQL database.</p>
+            <div class="project-links mt-4">
+              <a href="https://github.com/PrasathK83/CRM-Java-fullstack-with-postgres" target="_blank" class="link-btn hover:bg-purple-500 hover:text-white hover:border-purple-500"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </article>
+
+          <!-- Featured 6: Orange -->
+          <article class="card project-card border border-orange-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.6)] hover:-translate-y-2 transition-all duration-300">
+            <div class="project-icon text-orange-400 bg-orange-900/40"><i class="fa-solid fa-network-wired"></i></div>
+            <h3 class="text-orange-50">Multi-Agent Business Analyst</h3>
+            <p>An intelligent system using multiple AI agents to perform business analysis, market research, and insights generation.</p>
+            <div class="project-links mt-4">
+              <a href="https://github.com/PrasathK83/Multi-Agent-Business-Analyst" target="_blank" class="link-btn hover:bg-orange-500 hover:text-white hover:border-orange-500"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="text-2xl font-bold text-center text-white mb-8 mt-16">More <span class="text-cyan-400">Projects</span></h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Small projects grid -->
+          <a href="https://github.com/PrasathK83/Carbonfoot-print-tracker" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-green-400 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-green-400"><i class="fa-brands fa-github mr-2"></i>Carbonfoot-print-tracker</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/Weather-UI-wearOS" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-cyan-400"><i class="fa-brands fa-github mr-2"></i>Weather-UI-wearOS</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/Fire-detection-" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-orange-500 hover:shadow-[0_0_15px_rgba(249,115,22,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-orange-500"><i class="fa-brands fa-github mr-2"></i>Fire-detection-</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/TicTacToe" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-pink-500 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-pink-500"><i class="fa-brands fa-github mr-2"></i>TicTacToe</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/multiagent" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-purple-400 hover:shadow-[0_0_15px_rgba(192,132,252,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-purple-400"><i class="fa-brands fa-github mr-2"></i>multiagent</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/DNA-Replication-simulation" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-blue-400 hover:shadow-[0_0_15px_rgba(96,165,250,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-blue-400"><i class="fa-brands fa-github mr-2"></i>DNA-Replication-simulation</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/Boder-Box" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-yellow-400 hover:shadow-[0_0_15px_rgba(250,204,21,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-yellow-400"><i class="fa-brands fa-github mr-2"></i>Boder-Box</h4>
+          </a>
+          <a href="https://github.com/SARAN-KUMAR-S/G60-chatbot" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-emerald-400 hover:shadow-[0_0_15px_rgba(52,211,153,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-emerald-400"><i class="fa-brands fa-github mr-2"></i>G60-chatbot</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/LG-Leetcode-to-google-sheet" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-green-400 hover:shadow-[0_0_15px_rgba(74,222,128,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-green-400"><i class="fa-brands fa-github mr-2"></i>LG-Leetcode-to-google-sheet</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/Cold-Email-Generator" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-indigo-400 hover:shadow-[0_0_15px_rgba(129,140,248,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-indigo-400"><i class="fa-brands fa-github mr-2"></i>Cold-Email-Generator</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/LeetG601" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-rose-400 hover:shadow-[0_0_15px_rgba(251,113,133,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-rose-400"><i class="fa-brands fa-github mr-2"></i>LeetG601</h4>
+          </a>
+          <a href="https://github.com/PrasathK83/MCP-Connction" target="_blank" class="group block p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all">
+            <h4 class="text-sm font-bold text-gray-200 group-hover:text-cyan-400"><i class="fa-brands fa-github mr-2"></i>MCP-Connction</h4>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact section reveal" id="contact">
+        <h2 class="section-title">Get in <span>Touch</span></h2>
+        <div class="contact-card card border-b-2 border-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] transition-all duration-300">
+          <div class="contact-info">
+            <a href="mailto:kprasath202006@gmail.com" class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>kprasath202006@gmail.com</span>
+            </a>
+            <a href="tel:+919750462042" class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 9750462042</span>
+            </a>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Erode, Tamil Nadu</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/PrasathK83" target="_blank" aria-label="GitHub" class="hover:bg-cyan-500 hover:text-gray-900 hover:border-cyan-500"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/prasath-k-406916324" target="_blank" aria-label="LinkedIn" class="hover:bg-cyan-500 hover:text-gray-900 hover:border-cyan-500"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Prasath Krishna Moorthi. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
